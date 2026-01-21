@@ -58,7 +58,7 @@
                 </div>
                 <!-- For Group 3: Card 2: Resize & aspect -->
                 <div class="card module-6" id="card2">
-                    <h2>2) Resize & Aspect Ratio object-fit</h2>
+                    <h2>2) Resize & Aspect Ratio <span class="badge">object-fit</span></h2>
                     <p>ถ้ากำหนดทั้งความกว้างและสูง ให้ใช้ <code>object-fit</code> เพื่อไม่ให้ภาพบิด</p>
                     <pre>
 /* ครอปภาพให้พอดีกรอบ */
@@ -90,21 +90,21 @@ border: 1px solid black;
                                 </pre>
                     <h3>ภาพต้นฉบับ</h3>
                     <img src="https://thumbs.dreamstime.com/b/transparent-png-image-surprised-emoji-376439721.jpg"
-                        alt="">
+                        alt="ภาพต้นฉบับ">
                     <h3>ใส่ <code>object-fit: contain</code> ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)</h3>
-                    <div class="contain">
+                    <div >
                         <img src="https://thumbs.dreamstime.com/b/transparent-png-image-surprised-emoji-376439721.jpg"
-                            alt="">
+                            alt="ภาพต้นฉบับ" class="obj-fit-image contain">
                     </div>
                     <h3>object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)</h3>
-                    <div class="fill">
+                    <div>
                         <img src="https://thumbs.dreamstime.com/b/transparent-png-image-surprised-emoji-376439721.jpg"
-                            alt="">
+                            alt="ภาพต้นฉบับ" class="obj-fit-image fill ">
                     </div>
                     <h3>object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก</h3>
-                    <div class="cover">
+                    <div >
                         <img src="https://thumbs.dreamstime.com/b/transparent-png-image-surprised-emoji-376439721.jpg"
-                            alt="">
+                            alt="ภาพต้นฉบับ" class="obj-fit-image cover ">
                     </div>
                 </div>
 
@@ -119,9 +119,11 @@ border: 1px solid black;
     &ltimg src="images/banner.jpg" alt="Banner"&gt
                                 </a>
                             </pre>
-                        &lta href="https://www.youtube.com" target="_blank"&gt
-                        <img src="https://m.media-amazon.com/images/I/4195dyf+rFL.png" alt="Banner" class="YT-img">
-                        </a>
+                        <div class="YT-img">
+                            <a href="https://www.youtube.com" target="_blank">
+                            <img src="https://m.media-amazon.com/images/I/4195dyf+rFL.png" alt="Banner" >
+                            </a>
+                        </div>
                         <p class="note">ใช้<code>target="_blank"</code> เมื่ออยากเปิดในแท็บใหม่
                         </p>
                     </div>
@@ -135,12 +137,14 @@ border: 1px solid black;
 .gallery img { height: 120px; object-fit: cover; }
                     </pre>
                     <div class="gallery">
-                        <img src="1.png" alt="Image 1">
-                        <img src="2.png" alt="Image 2">
-                        <img src="3.png" alt="Image 3">
-                        <img src="4.png" alt="Image 4">
-                        <img src="5.png" alt="Image 5">
-                        <img src="6.png" alt="Image 6">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 1">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 2">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 3">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 4">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 5">
+                        <img src="https://placehold.co/400x400?text=1" alt="Gallery 6">
+                        
+                        
                     </div>
                     <p
                         style="color: #888; font-size: 14px; border-left: 2px solid #ddd; padding-left: 10px; margin-top: 15px;">
@@ -151,13 +155,13 @@ border: 1px solid black;
                 <div class="card module-5" id="card6">
                     <h2>6) Responsive Images <span>max-width:100%</span></h2>
                     <p>ทำให้ภาพไม่ล้นการ์ดและย่อขยายตามหน้าจอ</p>
-                    <per>
+                    <pre>
                         img{
                         max-width:100;
                         height : auto;
                         }
-                    </per>
-                    <img src="https://images.dmc.tv/wallpaper/raw/0f2eb9c101b324815d366a.jpg" alt="รูปทะเล">
+                    </pre>
+                   <img src="https://placehold.co/1200x800?text=Responsive+Image" alt="Responsive">
                 </div>
                 <!-- For Group 8: Card 7: Figure & Caption + Task -->
                 <div class="card module-6" id="card7">
@@ -174,10 +178,10 @@ border: 1px solid black;
 &lt;/figure&gt;
                                 
                     </pre>
-                    <figure style="margin-top: 20px; text-align: center;">
+                    <figure>
                         <img src="https://img.freepik.com/free-photo/milford-sound-new-zealand-travel-destination-concept_53876-42945.jpg"
                             alt="ทิวทัศน์ธรรมชาติ" style="width: 100%; max-width: 600px; border-radius: 8px;">
-                        <figcaption style="margin-top: 8px; color: #666;">
+                        <figcaption>
                             รูปที่ 1: ตัวอย่างการใช้แท็ก figure และ figcaption
                         </figcaption>
                     </figure>
