@@ -547,3 +547,208 @@ background: linear-gradient(45deg, #5a67d8, #6b46c1);
 transform: translateY(-2px);
 box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
 }
+
+/* เปลี่ยน widget ที่เป็นฟอร์มให้เป็น gradient */
+.sidebar .widget.subscribe-widget{
+  background: linear-gradient(180deg,#19b37f,#2ed573);
+  color:white;
+  border-radius:14px;
+ box-shadow: 0 0 10px rgba(39, 37, 37, 0.18);
+  padding:25px;
+}
+
+/* การ์ดติดต่อสีม่วง */
+.sidebar .widget.contact-widget{
+  background: linear-gradient(180deg,#6c7cff,#6a35d4);
+  color:white;
+  border-radius:14px;
+  box-shadow: 0 0 10px rgba(39, 37, 37, 0.18);
+  padding:25px;
+}
+
+/* หัวข้อ */
+.sidebar .widget.subscribe-widget h3,
+.sidebar .widget.contact-widget h3{
+  font-size:20px;
+  margin-bottom:18px;
+}
+
+/* label */
+.sidebar .widget.subscribe-widget label,
+.sidebar .widget.contact-widget label{
+  display:block;
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+/* input style (กล่องสีเทาเหมือนรูป) */
+.sidebar .widget.subscribe-widget input,
+.sidebar .widget.subscribe-widget select,
+.sidebar .widget.contact-widget input,
+.sidebar .widget.contact-widget select,
+.sidebar .widget.contact-widget textarea{
+  width:100%;
+  padding:12px 14px;
+  margin-bottom:14px;
+  border:none;
+  border-radius:10px;
+  background:#e9edf0;
+  font-size:14px;
+  outline:none;
+}
+
+/* textarea สูง */
+.sidebar .widget.contact-widget textarea{
+  height:95px;
+  resize:none;
+}
+
+/* focus effect */
+.sidebar .widget input:focus,
+.sidebar .widget select:focus,
+.sidebar .widget textarea:focus{
+  box-shadow:0 0 0 3px rgba(255,255,255,.35);
+}
+
+/* ปุ่มไล่สี */
+.btn-gradient{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:30px;
+  background: linear-gradient(45deg,#ff7e7e,#ffb199);
+  color:white;
+  font-weight:600;
+  font-size:15px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn-gradient:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.bg-sub{
+  background:#ffffff;
+  padding:20px;
+  border-radius:10px;
+  
+}
+
+.text-con{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:15px;
+  text-align: center;
+}
+.text-sub{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:15px;
+  text-align: center;
+}
+/* ========================================================= */
+/* saharat Card Styles */
+/* ========================================================= */
+.saharat-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.facebook-like-box {
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.like-content .like-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.like-content .like-count {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* ========================================================= */
+/* Sponsor Card Styles */
+/* ========================================================= */
+.sponsor-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.sponsor-ad-box {
+  background-color: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-placeholder {
+  text-align: center;
+}
+
+.ad-placeholder p {
+  font-size: 16px;
+  color: #999;
+  font-weight: 500;
+}
+/* ========================================================= */
+/* Footer Styles */
+/* ========================================================= */
+.site-footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content .copyright {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.footer-content .footer-note {
+  font-size: 13px;
+  color: #bdc3c7;
+  margin: 0;
+}
+
+.footer-content .footer-note a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.footer-content .footer-note a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* Contact link specific styling */
+.site-footer .footer-content .footer-note .contact-link {
+  color: #3498db !important;
+  text-decoration: none !important;
+}
+
+.site-footer .footer-content .footer-note .contact-link:hover {
+  color: #2980b9 !important;
+  text-decoration: underline !important;
+}
