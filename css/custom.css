@@ -11,8 +11,8 @@ body {
 }
 
 .wrapper {
-  width: 1000px;
-  max-width: 100%;
+  width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
   /*background-color: aqua;*/
 }
@@ -752,3 +752,192 @@ box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
   color: #2980b9 !important;
   text-decoration: underline !important;
 }
+
+/*Gold Price*/
+:root {
+  --line: rgb(255, 115, 0);
+  --bg01: rgba(255, 224, 86, 0.856);
+  --bg02: rgb(71, 255, 64);
+  --bg03: rgb(253, 255, 121);
+  --up: green ;
+  --down: red ; 
+
+
+}
+
+.wrap-table{
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.price-table{
+  width: 100%;
+  border: 1px solid var(--line);
+  color: #000000;
+ 
+
+
+  border-collapse: collapse;
+  
+}
+
+.price-table thead {
+  background-color: var(--bg01);
+}
+
+.month{
+  background-color: var(--bg01);
+}
+
+
+.price-table th,
+.price-table td{
+  border: 1px solid var(--line);
+  padding: 10px 4px;
+}
+
+.num{
+  text-align: right;
+}
+
+.delta{
+  text-align: center;
+}
+.delta.up{
+  color:var(--up);
+}
+.delta.down{
+  color:var(--down);
+}
+
+.price-table tr.total th,
+.price-table tr.total td{
+  background-color: var(--bg02);
+  font-weight: 600;
+}
+
+.price-table td{
+ background-color: var(--bg03);
+}
+
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-right: 5px;
+}
+
+.icon.up{
+  border-bottom: 10px solid var(--up) ;  
+}
+.icon.down{
+  border-top: 10px solid var(--down) ;  
+}
+
+/* RESPONSIVE*/
+@media (max-width: 922px) {
+  .site-header {
+    background-color:yellow;
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    background-color: green;
+  }
+  .hero-grid{
+      grid-template-columns:1fr;
+  }
+  .content-layout{
+      grid-template-columns:1fr;
+  }
+  .form-row{
+      grid-template-columns:1fr;
+  }
+  .form-checkbox-group{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-menu{
+    flex-direction: column;
+    padding-top:10px ;
+  }
+  .nav-menu li a{
+    border-top: 1px solid rgba(255, 255, 255, 0.278);
+  }
+}
+  /*ซ่อนบนหน้าจอปกติ*/
+  #burger-menu{
+    display: none;
+  }
+
+@media(max-width:576px)
+{
+  .site-header{
+    background-color: pink;
+  }
+
+  /* กำหนดขนาด/พื้นที่ของปุ่ม*/
+#burger-menu{
+  display: block;
+  height: 25px;
+  width: 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* วาดเส้น3ขีดด้วย span+pseudo elements*/
+#burger-menu span,
+#burger-menu span::before,
+#burger-menu span::after{
+  background-color: #000000;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  transition: all 0.3s ease;
+  content: "";
+}
+/* /จัดตำแหน่ง 3 เส้น (บน/กลาง/ล่าง)/ */
+#burger-menu span {top: 11px;}
+#burger-menu span::before{top: -8px;}
+#burger-menu span::after{top: 8px;}
+
+
+/* Animation เมื่อกด */
+
+    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+    #burger-menu.close span {
+        background: transparent;
+    }
+
+    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+    #burger-menu.close span:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+    #burger-menu.close span:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    /* ซ่อนเมนู */
+    #menu
+    {
+      display: none;
+      flex-direction: column;
+      background-color: #035882;
+    }
+    /* เปิดเมนู */
+    #menu.overlay{
+      display: flex;
+    }
+}
+  
+  
+  
+  
