@@ -16,8 +16,8 @@
                     <img src="https://www.pngplay.com/wp-content/uploads/13/Symbol-Logo-Transparent-Image.png" alt="">
                     <h1 class="brand">TechVault</h1>
                 </div>
-                <nav>
-                    <ul>
+                <nav id="menu">
+                    <ul class="nav-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Solutions</a></li>
                         <li><a href="#">Pricing</a></li>
@@ -30,6 +30,11 @@
                 <button class="btn-singup">Sign up</button>
                 <button class="btn-login">Login</button>
             </div>
+
+<div id="burger-menu">
+                <span></span>
+             </div>
+
 
         </div>
     </header>
@@ -86,17 +91,14 @@
         <section class="customize">
             <div class="left-side order-text">
                 <h2>Customizable Technology Stack</h2>
-                <p>Our IT solutions are flexible and tailored to your enterprise needs. Choose from a comprehensive
-                    suite of
+                <p>Our IT solutions are flexible and tailored to your enterprise needs. Choose from a comprehensive suite of
                     microservices, APIs, and containerized applications that integrate seamlessly with your existing
-                    systems. Leverage cloud-native architecture, serverless computing, and advanced analytics to
-                    optimize
+                    systems. Leverage cloud-native architecture, serverless computing, and advanced analytics to optimize
                     operations and reduce infrastructure costs while maintaining security and compliance standards.</p>
                 <button class="btn-primary">Learn more</button>
             </div>
             <div class="right-side order-photo">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400"
-                    alt="Server technology">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400" alt="Server technology">
             </div>
         </section>
     </div>
@@ -104,7 +106,7 @@
     <div class="bg-gray">
         <div class="container">
             <section class="support">
-
+                 
                 <div class="left-side order-text">
                     <h2>24/7 Technical Support</h2>
                     <p>TechVault provides round-the-clock support and professional services to ensure optimal system
@@ -113,10 +115,9 @@
                     <button class="btn-primary">Learn more</button>
                 </div>
                 <div class="right-side order-photo">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400"
-                        alt="IT support team">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400" alt="IT support team">
                 </div>
-
+            
             </section>
         </div>
     </div>
@@ -131,8 +132,7 @@
             <div class="discover-content">
                 <div class="item">
                     <h3>API-First Architecture</h3>
-                    <p>Build and integrate applications seamlessly with comprehensive REST and GraphQL APIs, ensuring
-                        smooth
+                    <p>Build and integrate applications seamlessly with comprehensive REST and GraphQL APIs, ensuring smooth
                         interoperability across your technology ecosystem.</p>
                 </div>
                 <div class="item">
@@ -147,14 +147,12 @@
                 </div>
                 <div class="item">
                     <h3>Multi-Cloud Compatibility</h3>
-                    <p>Deploy across AWS, Azure, GCP, and on-premises environments with unified management and
-                        consistent
+                    <p>Deploy across AWS, Azure, GCP, and on-premises environments with unified management and consistent
                         performance across all platforms.</p>
                 </div>
                 <div class="item">
                     <h3>Enterprise Scalability</h3>
-                    <p>Handle massive workloads with auto-scaling capabilities that grow your infrastructure from
-                        initial
+                    <p>Handle massive workloads with auto-scaling capabilities that grow your infrastructure from initial
                         deployment to enterprise-grade deployments.</p>
                 </div>
                 <div class="item">
@@ -178,82 +176,112 @@
 
     <div class="bg-gray">
 
-        <div class="container">
-            <div class="item">
-                <h2>🔍 Find Your Ideal IT Solution</h2>
-                <form action="" method="" class="recomentation-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="ป้อนชื่อของคุณ" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="ป้อนอีเมลของคุณ"
-                                class="form-input">
-                        </div>
-                    </div>
-
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="Business">Business Type:</label>
-                            <select name="Business" id="Business" class="form-select">
-                                <option value="">Select your business type</option>
-                                <option value="xx">1</option>
-                                <option value="xx">2</option>
-                                <option value="xx">3</option>
-                            </select>
+            <div class="container">
+                <div class="item">
+                    <h2 class="form-title">🔍 Find Your Ideal IT Solution</h2>
+                    <form action="" method="" class="recomentation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="ป้อนชื่อของคุณ" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="ป้อนอีเมลของคุณ" class="form-input">
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="Budget">Annual IT Budget:</label>
-                            <select name="Budget" id="Budget" class="form-select">
-                                <option value="">Select budget range</option>
-                                <option value="xx">1</option>
-                                <option value="xx">2</option>
-                                <option value="xx">3</option>
-                            </select>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Business">Business Type:</label>
+                                <select name="Business" id="Business" class="form-select">
+                                    <option value="">Select your business type</option>
+                                    <option value="xx">1</option>
+                                    <option value="xx">2</option>
+                                    <option value="xx">3</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="Budget">Annual IT Budget:</label>
+                                <select name="Budget" id="Budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="xx">1</option>
+                                    <option value="xx">2</option>
+                                    <option value="xx">3</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+                        
+
+                        <div class="form-group">
+                            <LABEL FOR="">SUPPORT REQUIRED:</LABEL>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input TYPE="radio" ID="minimal" NAME="support" VALUE="minimal">
+                                    <SPAN>Minimal Support</SPAN>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="business" name="support" value="business">
+                                    <span>Business Hours Support</span>
+                                </div>
+                                    <div class="radio-item">
+                                        <input type="radio" id="245" name="support" value="245">
+                                        <span>24/5 Support</span>
+                                    </div>
+                                
+                                    <div class="radio-item">
+                                        <input type="radio" id="247" name="support" value="247">
+                                        <span>24/7 Premium Support</span>
+                                    </div>
+                            </div>
+                        </div>
 
 
-                    <div class="form-group">
-                        <label for="">Support Required:</label>
-                        <input type="radio" id="minimal" name="support" value="minimal">
-                        <span>Minimal Support</span>
-                        <input type="radio" id="minimal" name="support" value="minimal">
-                        <span>Business Hours Support</span>
-                        <input type="radio" id="business" name="support" value="business">
-                        <span>24/5 Support</span>
-                        <input type="radio" id="245" name="support" value="245">
-                        <span>24/7 Premium Support</span>
-                        <input type="radio" id="247" name="support" value="247">
-                    </div>
+                        <div class="form-group">
+                            <label for="">Key Requirements:</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="scalability" name="requirements[]" value="scalability">
+                                    <span>High Security & Compliance</span>
+                                </div>
+                                
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="intergration" name="requirements[]" value="intergration">
+                                    <span>Seamless Integration</span>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="maintenance" name="requirements[]" value="maintenance">
+                                    <span>Low Maintenance</span>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="performace" name="requirements[]" value="performace">
+                                    <span>High Performance</span>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="optimization" name="requirements[]" value="optimization">
+                                    <span>Cost Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="more">รายละเอียดเพิ่มเติม</label>
+                            <textarea name="more" id="more"
+                                placeholder="โปรดอธิบาย...."
+                                class="form-textarea"></textarea>
+                        </div>
 
 
-                    <div class="form-group">
-                        <label for="">Key Requirements:</label>
-                        <input type="checkbox" id="scalability" name="requirements[]" value="scalability">
-                        <span>High Security & Compliance</span>
-
-                        <input type="checkbox" id="intergration" name="requirements[]" value="intergration">
-                        <span>Seamless Integration</span>
-                        <input type="checkbox" id="maintenance" name="requirements[]" value="maintenance">
-                        <span>Low Maintenance</span>
-                        <input type="checkbox" id="performace" name="requirements[]" value="performace">
-                        <span>High Performance</span>
-                        <input type="checkbox" id="optimization" name="requirements[]" value="optimization">
-                        <span>Cost Optimization</span>
-                    </div>
-
-
-                    <button>🔍 Find Your Solution</button>
-                    <button>🔄 Reset Form</button>
-                </form>
+                        <div class="form-btn">
+                            <button type="submit" class="btn-submit">🔍 Find Your Solution</button>
+                            <button type="reset" class="btn-reset">🔄 Reset Form</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
+            </div>
 
 
     <footer>
@@ -276,7 +304,7 @@
                         <li><a href="#">About Us</a></li>
                     </ul>
                 </div>
-
+            
                 <div class="footer-item">
                     <h4>Legal</h4>
                     <ul>
@@ -285,7 +313,7 @@
                         <li><a href="#">Cookie policy</a></li>
                     </ul>
                 </div>
-
+            
                 <div class="footer-item">
                     <h4>Stay Connected</h4>
                     <ul>
@@ -297,6 +325,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var burgerMenu = document.getElementById('burger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
+
 
 </body>
 
